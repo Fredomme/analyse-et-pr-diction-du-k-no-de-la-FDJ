@@ -1,0 +1,34 @@
+# config.yaml
+
+general:
+  seed: 123
+
+dataset:
+  # Paramètres de cross validation temporelle
+  n_folds: 5  # => nombre de folds
+  # (Si vous mettez 1 => on fait un simple split train/test)
+  # ratio pour la partie test finale
+  test_ratio: 0.2
+
+training:
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.001
+
+  # Paramètres LSTM
+  lstm_hidden_dim: 256
+  lstm_num_layers: 3
+  lstm_dropout: 0.3
+
+  # Paramètres Transformer
+  trans_nhead: 4
+  trans_num_layers: 3
+  trans_hidden_dim: 256
+  trans_time_feat_dim: 16
+  trans_dropout: 0.3
+
+  # Paramètres MLP
+  mlp_input_dim: 214
+  mlp_hidden_dim: 256
+  mlp_n_layers: 2
+  mlp_dropout: 0.3
