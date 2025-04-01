@@ -1,0 +1,25 @@
+# Environnements virtuels Python
+keno_env/
+venv/
+.env
+
+# Fichiers Python compilés
+*.pyc
+__pycache__/
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Données locales / résultats lourds
+*.npy
+*.parquet
+models_out/
+meta_info.txt
+eval_log.csv
+preproc_log.csv
+train_log_*.csv
